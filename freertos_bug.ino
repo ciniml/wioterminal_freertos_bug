@@ -32,7 +32,7 @@ void setup() {
 
     TimerTC3.initialize();
     TimerTC3.setPriority(3);
-    // Comment out if you want to reproduce the Seeed_Arduino_FreeRTOS priority issue.
+    // Uncomment if you want to reproduce the Seeed_Arduino_FreeRTOS priority issue.
     //TimerTC3.setPriority(configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY);
     TimerTC3.attachInterrupt(isrCallback);
 
